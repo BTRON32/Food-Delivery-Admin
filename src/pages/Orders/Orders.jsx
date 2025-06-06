@@ -30,6 +30,7 @@ const Orders = ({url}) => {
     })
     if (response.data.success) {
       await fetchAllOrders()
+       toast.success("Order status updated successfully!")
     }
     
   }
